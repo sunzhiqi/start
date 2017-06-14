@@ -19,7 +19,7 @@
 
 <style type="text/css">
 body  {
-background-image:url(https://cn.bing.com/az/hprichbg/rb/PorthminsterBeach_ZH-CN10275083647_1920x1080.jpg);
+background-image:url(https://cn.bing.com/az/hprichbg/rb/BromoJava_ZH-CN13278140077_1920x1080.jpg);
 z-index: -1;
 background-repeat:no-repeat;
 background-attachment:fixed;
@@ -70,7 +70,7 @@ width: 100%;
 
     <p><center>
     <input type="submit" value="百度" id="baidu" button type="button" class="btn btn-primary" />
-    <input type="submit" value="谷歌" id="google1" button type="button" class="btn btn-primary"/>
+    <input type="submit" value="谷歌" id="google" button type="button" class="btn btn-primary"/>
 	<input type="submit" value="必应" id="bing" button type="button" class="btn btn-primary"/>
     <input type="submit" value="京东" id="jd" button type="button" class="btn btn-primary" />
     <input type="submit" value="淘宝" id="taobao" button type="button" class="btn btn-primary" />
@@ -244,18 +244,18 @@ width: 100%;
       sInfor.name="wd";
     }
     //Google
-    //sGoogle.onclick=function(){
-    //  sAddress.action="https://www.google.com/search";
-    //  sInfor.name="q";
-    //};
+    sGoogle.onclick=function(){
+      sAddress.action="https://www.google.com.hk/search";
+      sInfor.name="q";
+    };
     //Google
-     $('#google1').click(function() {
-      var query = $('#search').val();
-      if ( query ) {
-        window.open("http://google.hbspy.moe/#q=" + query, "_blank");
-        return false;
-      };
-    });
+     //$('#google1').click(function() {
+      //var query = $('#search').val();
+     // if ( query ) {
+       // window.open("https://www.google.com.hk/search", "_blank");
+        //return false;
+      //};
+    //});
     
    
     //京东（已修复）在移动端访问会跳出两次窗口（已修复）
