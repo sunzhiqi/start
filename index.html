@@ -212,7 +212,11 @@ width: 100%;
 <ul class="nav nav-tabs" ">
   <div id="footer">    
   <center> 	  
-     <p>对不起，今天我很难过，不能逗你开心了。</p>
+     <div id="jnkc">
+      <script>setInterval("jnkc.innerHTML=new Date().toLocaleString()+' 星期'+'日一二三四五六'.charAt(new Date().getDay());",1000);
+      </script>
+      
+  	</div>
   </center>
   </div>
 </ul>
