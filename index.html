@@ -71,7 +71,8 @@ width: 100%;
     <p><center>
     <input type="submit" value="百度" id="baidu" button type="button" class="btn btn-primary" />
     <input type="submit" value="谷歌" id="google" button type="button" class="btn btn-primary"/>
-	<input type="submit" value="必应" id="bing" button type="button" class="btn btn-primary"/>
+    <input type="submit" value="必应" id="bing" button type="button" class="btn btn-primary"/>
+    <input type="submit" value="搜狗" id="sougou" button type="button" class="btn btn-primary"/>
     <input type="submit" value="京东" id="jd" button type="button" class="btn btn-primary" />
     <input type="submit" value="淘宝" id="taobao" button type="button" class="btn btn-primary" />
     <input type="submit" value="微信" id="weixin" button type="button" class="btn btn-primary" />
@@ -252,6 +253,14 @@ width: 100%;
       sAddress.action="https://www.baidu.com/s";
       sInfor.name="wd";
     }
+    //搜狗
+    $('#sougou').click(function() {
+      var query = $('#search').val();
+      if ( query ) {        window.open("https://www.sogou.com/web?query=" + query , "_blank");
+        return false;
+      
+      };
+    });
     //Google
     sGoogle.onclick=function(){
       sAddress.action="https://www.google.com.hk/search";
