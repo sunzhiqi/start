@@ -266,17 +266,8 @@ width: 100%;
       sAddress.action="https://www.google.com.hk/search";
       sInfor.name="q";
     };
-    //Google
-     //$('#google1').click(function() {
-      //var query = $('#search').val();
-     // if ( query ) {
-       // window.open("https://www.google.com.hk/search", "_blank");
-        //return false;
-      //};
-    //});
     
-   
-    //京东（已修复）在移动端访问会跳出两次窗口（已修复）
+    //京东
     $('#jd').click(function() {
       var query = $('#search').val();
       if ( query ) {
@@ -285,12 +276,15 @@ width: 100%;
       };
     });
 
-    //天猫  搜索需求下 暂时下架
-//  stianmao.onclick=function(){
-//    sAddress.action="https://list.tmall.com/search_product.htm?";
-//    sInfor.name="q";
-//    //sInfor.type="enc=utf-8";
-//  }
+    // 地图搜索
+ $('#ditu').click(function() {
+      var query = $('#search').val();
+      if ( query ) {
+        window.open("http://ditu.amap.com/search?query=" + query + " ", "_blank");
+        return false;
+      
+      };
+    });
     
     //淘宝
     staobao.onclick=function(){
@@ -298,7 +292,7 @@ width: 100%;
       sInfor.name="q";
     }
     
-      //微信  恢复上线
+      //微信
      $('#weixin').click(function() {
       var query = $('#search').val();
       if ( query ) {
@@ -339,7 +333,7 @@ width: 100%;
  $('#panci').click(function() {
       var query = $('#search').val();
       if ( query ) {
-        window.open("http://www.panc.cc/s/" + query + "/td_0", "_blank");
+        window.open("https://www.panc.cc/s/" + query + "/td_0", "_blank");
         return false;
       
      	};
@@ -351,7 +345,6 @@ width: 100%;
       sInfor.name="q";
     }
   </script>
-  <!--统计代码 -->
  
 </html>
 
