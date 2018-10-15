@@ -81,7 +81,7 @@ width: 100%;
     <input type="submit" value="豆瓣" id="douban" button type="button" class="btn btn-primary"/>
     <input type="submit" value="音乐" id="gequ" button type="button" class="btn btn-primary"/>
     <input type="submit" value="网盘" id="panci" button type="button" class="btn btn-primary"/>
-    <input type="submit" value="GitHub" id="github" button type="button" class="btn btn-primary"/>
+    <input type="submit" value="地图" id="ditu" button type="button" class="btn btn-primary"/>
  
   </center></p>
   
@@ -245,7 +245,7 @@ width: 100%;
     var sdouban=document.getElementById("douban");
     var sgequ=document.getElementById("gequ");
     var stieba=document.getElementById("tieba");
-    var sgithub=document.getElementById("github");
+    var sditu=document.getElementById("ditu");
     var swangpan=document.getElementById("wangpan");
 
     //百度
@@ -344,13 +344,7 @@ width: 100%;
       
      	};
     });
-
-      //github
-    sgithub.onclick=function(){
-      sAddress.action="https://github.com/search?";
-      //sInfor.type="author";
-      sInfor.name="q";
-    }
+								       
 	//微软必应
     sBing.onclick=function(){
       sAddress.action="https://cn.bing.com/search?q";
